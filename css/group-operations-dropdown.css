@@ -1,0 +1,56 @@
+.dropbutton-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbutton-widget::before {
+  content: "Group operations \25BE";
+  display: block;
+  padding: 8px 14px;
+  background: #f7f7f7;
+  border: 1px solid #c6c6c6;
+  border-radius: 4px;
+  user-select: none;
+  cursor: default;
+}
+
+.dropbutton {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 100%;
+  background: #fff;
+  border: 1px solid #c6c6c6;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.12s ease;
+}
+
+.dropbutton-wrapper:hover .dropbutton,
+.dropbutton-wrapper:focus-within .dropbutton {
+  opacity: 1;
+  visibility: visible;
+}
+
+.dropbutton li {
+  margin: 0;
+}
+
+.dropbutton a {
+  display: block;
+  padding: 8px 14px;
+  color: #1a1a1a;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.dropbutton a:hover,
+.dropbutton a:focus {
+  background: #f0f0f0;
+}

@@ -1,0 +1,8 @@
+services:
+  Drupal\lupus_decoupled_group_canvas\Hook\EntityTypeAlter: ~
+
+  Drupal\lupus_decoupled_group_canvas\Hook\ConfigSchemaAlter: ~
+
+  Drupal\lupus_decoupled_group_canvas\Hook\ContentTemplateAdminHooks:
+    arguments:
+      $entityTypeManager: '@entity_type.manager'

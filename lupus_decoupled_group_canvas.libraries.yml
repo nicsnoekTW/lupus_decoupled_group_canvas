@@ -1,0 +1,5 @@
+group_operations_dropdown:
+  version: 1.x
+  css:
+    component:
+      css/group-operations-dropdown.css: {}

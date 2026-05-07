@@ -1,0 +1,10 @@
+name: 'Lupus Decoupled Group Canvas'
+type: module
+description: 'Enables Drupal Canvas content templates to render Group entities in the decoupled frontend.'
+package: 'Lupus Decoupled'
+core_version_requirement: ^10.3 || ^11
+dependencies:
+  - canvas:canvas
+  - group:group
+  - lupus_decoupled:lupus_decoupled_canvas
+  - lupus_decoupled:lupus_decoupled_ce_api
